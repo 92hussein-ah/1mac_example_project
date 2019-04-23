@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}	
+/*styling the body*/
+body{
+    font-family: arial; 
+    margin: 0; 
+}
+/*header / logo title */
+.header{
+    background-color: lightblue; 
+    text-align: center; 
+    padding: 45px;
+    color: black;
+    font-size: 25px;
+}
+/*style navigation bar when on top*/
+.navi-bar{
+    display: flex;
+    background-color: #333; 
+}
+/*style navigation bar when links*/
+.navi-bar a{
+    text-decoration: none; 
+    color: white; 
+    padding: 14px 20px;
+    text-align: center; 
+}
+.navi-bar a:hover{
+    background-color: #ddd; 
+    color: black;
+}
+/*column container*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*creat tow columns-- unequal-- sits next to each other*/
+.side{
+    flex: 30%; 
+    background-color: #f1f1f1; 
+    padding: 20px; 
+}
+.main{
+    flex:70%;
+    background-color: white; 
+    padding: 20px;
+}
+/*fake imgs---*/
+
+/*
+img styling
+*/
+.pro-image {width: 100%}
+.fakeimg{
+    background-color: #aaa; 
+    width:100%; 
+    padding: 20px;
+}
+.animal-infos a {
+    text-decoration: none; 
+    font-weight: bold; 
+    color: black; 
+}
+.animal-infos a:hover{
+    text-decoration: underline; 
+}
+.sectionOne{
+    border: 1px solid cyan;
+    padding: 10px; 
+    box-shadow: 3px 1px 10px 3px #333;  
+ 
+}
+
+.activity{
+    border:1px solid #ddd;
+    padding: 10px; 
+    box-shadow: 3px 1px 10px 3px #333;  
+}
+.sectionTwo{
+    border: 1px solid cyan;
+    padding: 10px; 
+    box-shadow: 3px 1px 10px 3px #333;  
+    margin-top: 20px; 
+}
+.history{
+    border:1px solid #ddd;
+    padding: 10px; 
+    box-shadow: 3px 1px 10px 3px #333;  
+}
+/*footer*/
+.footer{
+    padding: 20px; 
+    background-color: #ddd; 
+    text-align:center;
+}
+
+
+/*responsive layout, when screen smaller than 700px=colums stock over each other*/
+@media screen and (max-width: 700px){
+
+    .row, .navi-bar{
+        flex-direction: column;
+    }
+}

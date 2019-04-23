@@ -1,0 +1,46 @@
+* {
+    box-sizing:  border-box; 
+
+}
+
+body{
+    margin: 0; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.header{
+    text-align: center; 
+    padding: 20px; 
+    
+}
+.gallContainer{
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0 5px; 
+}
+.img-gall-cl{
+    flex:25%; 
+    max-width: 25%; 
+    padding : 0 5px;
+}
+
+.img-gall-cl img {
+    margin-top: 8px; 
+    vertical-align: middle;
+}
+
+@media (max-width : 800px){
+    .img-gall-cl{
+        flex:50%; 
+        max-width: 50%; 
+        padding : 0 5px;
+    }
+}
+
+@media (max-width : 400px){
+    .img-gall-cl{
+        flex:100%; 
+        max-width: 100%; 
+        padding : 0 5px;
+    }
+}
