@@ -97,7 +97,7 @@ img styling
 
 
 /*responsive layout, when screen smaller than 700px=colums stock over each other*/
-@media (max-width: 400px){
+@media (max-width: 500px){
 
     .row, .navi-bar{
         flex-direction: column;
